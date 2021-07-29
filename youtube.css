@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --white: #f9f9f9;
+  --darkWhite: #ececec;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--darkWhite);
+  height: 100%;
+}
+
+/*------------------------------------------------Nav Bar----------------------------------------------------*/
+
+#navbar {
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  height: 5.6rem;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+#left {
+  margin: 1rem;
+}
+#left > img {
+  padding: 0.4rem 1.5rem;
+}
+#left > img:nth-of-type(1) {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+#left > img:nth-of-type(2) {
+  height: 2rem;
+  width: 9rem;
+  padding-right: 0rem;
+  cursor: pointer;
+}
+#center {
+  display: flex;
+  flex-direction: row;
+}
+#query {
+  width: 50rem;
+  margin: 1.2rem 0rem;
+  border: 1px solid rgb(204, 204, 204);
+  background-color: var(--white);
+  outline: none;
+  padding: 0rem 1rem;
+  font-size: 1.5rem;
+}
+#query:hover {
+  border: 1px solid rgb(88, 85, 226);
+}
+button {
+  margin: 1.2rem 0rem;
+  padding: 0rem 2rem;
+  border: 1px solid rgb(204, 204, 204);
+  outline: none;
+  cursor: pointer;
+}
+button > img {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+#center > img {
+  height: 2rem;
+  width: 2rem;
+  margin: 1.5rem;
+  cursor: pointer;
+}
+#right {
+  margin-right: 2rem;
+}
+#right > img {
+  height: 2rem;
+  width: 2rem;
+  margin: 1.5rem;
+  cursor: pointer;
+}
+
+/*-----------------------------------------------------left bar part----------------------------------------------------------------*/
+
+#leftbar {
+  height: 600px;
+  width: 6rem;
+  background-color: var(--white);
+  position: fixed;
+  text-align: center;
+}
+#leftbar img {
+  height: 2rem;
+  width: 2rem;
+  margin: 3rem 1.75rem 0rem;
+}
+
+/*-----------------------------------------------------Videos part----------------------------------------------------------------*/
+
+#videos {
+  padding-left: 15rem;
+  padding-top: 2rem;
+}
+.videoDiv {
+  display: flex;
+  flex-direction: row;
+}
+.videoDiv > div:nth-of-type(2) {
+  padding: 0rem 2rem;
+}
+.videoDiv > div > h2 {
+  font-weight: 500;
+  color: rgb(20, 20, 20);
+  margin: 2rem 0rem;
+  font-size: 1.8rem;
+}
+.videoDiv > div > p {
+  font-size: 1.5rem;
+  color: rgb(143, 138, 138);
+}

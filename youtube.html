@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YouTube</title>
+        <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/110d331e/img/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="youtube.css" />
+    </head>
+    <body>
+        <div id="parent">
+            <div id="navbar">
+                <div id="left">
+                    <img src="./images/hamberger.svg" title="Static">
+                    <img src="./images/youtubeLogo.svg" title="Home">
+                </div>
+                <div id="center">
+                    <input type="text" id="query" placeholder="Search">
+                    <button onclick="findVideo()" title="Search"><img src="./images/searchLogo.svg"></button>
+                    <img src="./images/micLogo.svg" title="static">
+                </div>
+                <div id="right">
+                    <img src="./images/recording.svg" title="static">
+                    <img src="./images/youtubeApp.svg" title="static">
+                    <img src="./images/notification.svg" title="static">
+                    <img src="./images/user.png" title="static">
+                </div>
+            </div>
+            <div id="main">
+                <div id="leftbar">
+                    <div>
+                        <img src="./images/homeLogo.svg" title="Home" style="cursor: pointer;">
+                        <span>Home</span>
+                    </div>
+                    <div>
+                        <img src="./images/explore.svg" title="Static" style="cursor: pointer;">
+                        <span>Explore</span>
+                    </div>
+                    <div>
+                        <img src="./images/subcrib.svg" title="Static" style="cursor: pointer;">
+                        <span>Subscription</span>
+                    </div>
+                    <div>
+                        <img src="./images/library.svg" title="Static" style="cursor: pointer;">
+                        <span>Library</span>
+                    </div>
+                </div>
+                <div id="videos"></div>
+            </div>
+        </div>
+    </body>
+</html>
+<script src="youtube.js"></script>
